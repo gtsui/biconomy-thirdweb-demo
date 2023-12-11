@@ -7,8 +7,8 @@ import { useWriteApprove } from "../hooks/useWriteApprove";
 import WalletButton from "@/src/components/WalletButton";
 
 const Body = () => {
-  const contractAddr = "0x4D1A5AE1b77a6CdA9D7b0f2e1a3c10890C7BB141";
-  const spender = "0xAAAA8C5867f5c44B6025688F481B34514e09fd8d";
+  const contractAddr = "0x4D1A5AE1b77a6CdA9D7b0f2e1a3c10890C7BB141"; // ERC20 on Goerli
+  const spender = "0xAAAA8C5867f5c44B6025688F481B34514e09fd8d"; // EOA
   const { smartAccount } = useContext(BiconomyContext);
   const { mutator } = useWriteApprove(contractAddr, spender, 42069);
 
